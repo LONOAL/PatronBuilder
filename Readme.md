@@ -87,3 +87,45 @@ Sí, es posible combinar el patrón Builder con el patrón Factory para crear ob
 En este caso, el patrón Factory se encarga de crear diferentes variantes de objetos complejos, mientras que el patrón Builder se encarga de construir el objeto complejo en sí.
 
 
+public interface Coche {
+    public void ensamblar();
+    public void pintar();
+    public void testear();
+    public void reparar();
+}
+
+
+public class CocheFamiliar implements Coche {
+    public void ensamblar() {
+        // Ensambla todas las piezas de el coche familiar
+    }
+
+    public void pintar() {
+        // Pinta la carrocería de el coche familiar
+    }
+
+    public void testear() {
+        // Testea el rendimiento en el banco de el coche familiar
+    }
+
+    public void reparar() {
+        // Reparar los posibles daños de fabricacion de el coche familiar
+    }
+}
+
+public class CocheDeportivo implements Coche {
+    public void ensamblar() {
+        // Ensambla todas las piezas de el coche deportivo
+    }
+
+    public void pintar() {
+        // Pinta la carrocería de el coche deportivo
+    }
+
+    public void testear() {
+        // Testea el rendimiento en el banco de el coche deportivo
+    }
+
+    public void reparar() {
+        // Reparar los posibles daños de fabricacion de el coche deportivo
+
